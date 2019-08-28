@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        android:src="@drawable/w2" />
+        android:src="@drawable/n23" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="| Developed By Javad Bargamadi |"
+            android:text="| Developed By Ki4rash |"
             android:textColor="#fff"
             android:textSize="19sp" />
 
@@ -38,7 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="| Logo Design By Ki4rash |"
+                android:text="@string/logo_design_by_ki4rash"
                 android:textColor="#fff"
                 android:textSize="17sp" />
             <TextView
@@ -58,11 +58,14 @@
         app:cardCornerRadius="20dp">
 
         <ImageView
-            android:layout_width="500dp"
-            android:layout_height="500dp"
-            android:layout_gravity="center"
+            android:layout_width="350dp"
+
+            android:layout_height="350dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="40dp"
+            android:layout_marginRight="150dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/w1" />
+            android:src="@drawable/s90" />
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
