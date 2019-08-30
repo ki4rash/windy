@@ -1,131 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:layout_gravity="center"
+    android:background="@drawable/m2"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_gravity="center"
+            android:id="@+id/txtdname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0dp"
+            android:text="Today"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:id="@+id/txtcity"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:id="@+id/txtdes"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:text=""
+            android:layout_marginTop="20dp"
+            android:textColor="#fff"
+            android:id="@+id/txtDec"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
+        <TextView
+
+
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:text="temp "
+            android:id="@+id/txttemp"
+            android:textColor="#fff"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/txtWindsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="windsp:"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
 
         <ImageView
+            android:id="@+id/imgIcon"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:scaleType="centerCrop"
-            android:src="@drawable/m2" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:orientation="vertical"
-            android:weightSum="10">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_weight="8"
-                app:cardBackgroundColor="#fff"
-                app:cardCornerRadius="20dp">
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/OtherDaysRecyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerInParent="true"
-
-                android:layout_weight="2">
-
-            </androidx.recyclerview.widget.RecyclerView>
-        </LinearLayout>
-    </RelativeLayout>
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scaleType="centerCrop" />
 
 
-    <LinearLayout
-        android:layout_width="360dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="left"
-        android:background="#fff"
-        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnForecast"
+            android:layout_width="417dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Forecast" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:gravity="center"
-            app:cardBackgroundColor="#ff5722"
-            app:cardCornerRadius="10dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="weather"
-                android:textColor="#fff"
-                android:textSize="80sp" />
-        </androidx.cardview.widget.CardView>
+            android:layout_height="match_parent" />
 
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:foreground="#000" />
+    </LinearLayout>
 
-        <LinearLayout
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_gravity="left"
+        android:layout_width="360dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtsearch"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            android:text="search"
             android:layout_width="wrap_content"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:weightSum="10">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="35dp"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:src="@drawable/m1" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/btnChangeCity"
-                android:layout_width="0dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_weight="9"
-                app:cardBackgroundColor="#90caf9"
-                app:cardCornerRadius="10dp">
-
-                <TextView
-                    android:id="@+id/txtChangeCity"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginBottom="5dp"
-                    android:gravity="center_vertical"
-                    android:text="Change City"
-                    android:textColor="#fff"
-                    android:textSize="25sp" />
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
+            android:layout_height="wrap_content"/>
 
     </LinearLayout>
 
 
 
-</androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

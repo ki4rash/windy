@@ -9,6 +9,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
         android:src="@drawable/n23" />
 
@@ -21,34 +22,10 @@
         android:layout_marginBottom="5dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="| Developed By Ki4rash |"
-            android:textColor="#fff"
-            android:textSize="19sp" />
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/logo_design_by_ki4rash"
-                android:textColor="#fff"
-                android:textSize="17sp" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text=" Thanks to S.Farhood |"
-                android:textColor="#fff"
-                android:textSize="17sp" />
-        </LinearLayout>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 
     <androidx.cardview.widget.CardView
@@ -61,11 +38,14 @@
             android:layout_width="350dp"
 
             android:layout_height="350dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_margin="40dp"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_margin="30dp"
             android:layout_marginRight="150dp"
+            android:drawingCacheQuality="auto"
             android:scaleType="centerCrop"
-            android:src="@drawable/s90" />
+            android:src="@drawable/s90"
+            android:visibility="visible"
+            tools:visibility="visible" />
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
